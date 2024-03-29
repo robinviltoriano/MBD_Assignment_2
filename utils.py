@@ -1,6 +1,9 @@
 import pandas as pd 
 
 def clean_data(dataframe):
+    """
+    This function takes the dataframe and will inplace cleaned the data
+    """
     # change BillNo, CustomerID to string
     dataframe['BillNo'] = dataframe['BillNo'].astype(str)
     dataframe['CustomerID'] = dataframe['CustomerID'].astype(str)
